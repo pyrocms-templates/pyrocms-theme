@@ -1,0 +1,7 @@
+{% verbatim %}
+{% if template.show_banner %}
+    <section id="banner"
+             style="background-image: url({{ image_path(random(config('{{vendor|lower}}.theme.{{slug|lower}}::design.banners'))) }})">
+    </section>
+{% endif %}
+{% endverbatim %}

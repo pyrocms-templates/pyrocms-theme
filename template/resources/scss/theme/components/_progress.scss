@@ -1,0 +1,3 @@
+.progress-primary {
+    @include progress-variant($progress-bar-bg);
+}

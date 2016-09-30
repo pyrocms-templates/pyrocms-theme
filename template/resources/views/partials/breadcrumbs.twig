@@ -1,0 +1,13 @@
+{% verbatim %}
+{% if template.breadcrumbs %}
+    <ol class="breadcrumb" style="margin-bottom: 5px;">
+        {% for breadcrumb, href in template.breadcrumbs %}
+            <li class="{{ loop.last ? 'active' }}">
+                <a href="{{ href }}">
+                    {{ trans(breadcrumb) }}
+                </a>
+            </li>
+        {% endfor %}
+    </ol>
+{% endif %}
+{% endverbatim %}

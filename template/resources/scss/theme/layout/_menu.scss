@@ -1,0 +1,105 @@
+$menu-link-color: lighten($gray-light, 25%);
+
+#menu {
+    padding: 0;
+    float: right;
+    list-style: none;
+    margin: 1.1em 1.5em 0 0;
+
+    li {
+        height: 100%;
+        margin-left: 1em;
+        position: relative;
+        display: inline-block;
+        color: $menu-link-color;
+
+        &.dropdown {
+            padding-right: 0.75em;
+
+            &:after {
+                top: 25%;
+                right: 0;
+                content: "\f0d7";
+                font-size: 0.5em;
+                position: absolute;
+                font-family: "FontAwesome";
+            }
+        }
+
+        a {
+            color: $menu-link-color;
+        }
+
+        .dropdown-menu {
+            right: 0;
+            left: auto;
+            padding: 2em;
+            border-radius: 0;
+            min-width: 350px;
+            margin-top: 1.3em;
+            color: lighten($gray, 10%);
+
+            a {
+                color: lighten($gray, 10%);
+            }
+
+            .arrow {
+                left: 75%;
+                top: -11px;
+                width: 22px;
+                height: 11px;
+                margin-left: -11px;
+                position: absolute;
+                letter-spacing: normal;
+                border-bottom: 11px solid #ffffff;
+                border-left: 11px solid transparent;
+                border-right: 11px solid transparent;
+                border-top: none;
+            }
+
+            .media {
+                margin-top: 0;
+
+                .media-heading {
+                    margin-bottom: 0;
+                    font-weight: bold;
+                }
+
+                .email {
+                    margin-bottom: 0.06em;
+                }
+
+                .btn {
+                    color: #ffffff;
+                }
+            }
+            
+        }
+    }
+    
+    .sm-icon {
+    	display: none;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #menu {
+        .sm-txt {
+        	display: none;
+        }
+        .sm-icon {
+        	display: block;
+        }
+        li {
+        	.dropdown-menu {
+        		padding: 1em;
+    			min-width: 275px;
+    			.arrow {
+    				left: 95%;
+    				top: -10px;
+    			}
+        	}
+
+      	}
+    }
+}

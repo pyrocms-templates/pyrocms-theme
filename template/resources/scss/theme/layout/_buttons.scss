@@ -1,0 +1,32 @@
+#buttons {
+    padding: 0;
+    float: right;
+    list-style: none;
+    display: inline-block;
+    margin: 4em 1.5em 0 0;
+
+    .btn {
+        display: inline-block;
+
+        &:not(:first-of-type) {
+            margin-left: 1em;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #buttons {
+        float: none;
+        display: block;
+        margin: 1em 1.5em 0;
+
+        .btn {
+            display: block;
+            
+            &:not(:first-of-type) {
+            	margin-top: 1em;
+            	margin-left: 0;
+        	}
+        }
+    }
+}

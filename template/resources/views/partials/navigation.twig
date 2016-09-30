@@ -1,0 +1,25 @@
+{% verbatim %}
+<div id="navigation">
+    <ul class="nav nav-tabs">
+        {% for link in template.cp.navigation.main %}
+            <li class="nav-item">
+                <a class="nav-link {{ link.active ? 'active' }}" href="{{ link.href }}">
+
+                    {% if loop.first %}
+                        {{ icon('home') }}&nbsp;
+                    {% endif %}
+
+                    {{ trans(link.title)|raw }}
+                </a>
+            </li>
+        {% endfor %}
+
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="push-menu" href="#">
+                &bull;&bull;&bull;
+            </a>
+        </li>
+
+    </ul>
+</div>
+{% endverbatim %}

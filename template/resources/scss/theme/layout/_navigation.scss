@@ -1,0 +1,47 @@
+$navigation-link-color: lighten($gray-light, 25%);
+$navigation-active-bg: $gray-dark;
+
+#navigation {
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+    display: inline-block;
+
+    .nav {
+        border-bottom: none;
+
+        li {
+            a {
+                border: none;
+                color: $navigation-link-color;
+
+                &:hover {
+                    color: lighten($navigation-link-color, 10%);
+                }
+
+                &.active {
+                    color: $white;
+                    background: $navigation-active-bg;
+                }
+
+                i {
+                    color: lighten($navigation-active-bg, 20%);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    #navigation {
+    	margin-top: .75em;
+    	margin-left: 0;
+        .nav {
+            li {
+            	display: none;
+                &:last-child {
+                    display: block !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{% verbatim %}
+<section id="push">
+
+    <a href="#" data-dismiss="push-menu" class="dismiss">{{ icon('times-circle') }}</a>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            {% if addon('search').installed %}
+                <div class="col-md-10">
+                    <form method="get" action="{{ url('admin/search') }}">
+                        <div class="input-group">
+                            <input type="text" class="form-control"
+                                   placeholder="{{ trans('theme::control_panel.search') }}..." name="filter_term">
+                            <span class="input-group-addon">{{ icon('search') }}</span>
+                        </div>
+                    </form>
+                </div>
+            {% endif %}
+
+            <div class="{{ addon('search').installed ? 'col-md-14' : 'col-md-24' }} modules">
+                {% for links in template.cp.navigation.chunk(4) %}
+                    <div class="row">
+                        {% for link in links %}
+                            <div class="col-sm-6">
+                                <a class="nav-link {{ link.active ? 'active' }}"
+                                   href="{{ link.href }}">
+                                    {{ trans(link.title)|raw }}
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+
+    </div>
+</section>
+{% endverbatim %}

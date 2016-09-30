@@ -1,0 +1,18 @@
+{% verbatim %}
+<!doctype html>
+
+<html>
+
+<head>
+    {% include "theme::partials/metadata" %}
+</head>
+
+<body id="login" style="background-image: url({{ image_path(random(config('{{vendor|lower}}.theme.{{slug|lower}}::design.backgrounds'))) }})">
+
+{{ block('content') }}
+
+{% include "theme::partials/js" %}
+
+</body>
+</html>
+{% endverbatim %}

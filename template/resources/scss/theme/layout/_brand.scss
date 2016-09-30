@@ -1,0 +1,17 @@
+#brand {
+    float: left;
+    width: 12em;
+    height: 12em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $brand-primary;
+    background-image: url("{{ image_path('theme::img/icon-dark-transparent.png') }}");
+}
+
+@include media-breakpoint-down(sm) {
+    #brand {
+        width: 4em;
+        height: 4em;
+        background-size: 45%;
+    }
+}

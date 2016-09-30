@@ -1,0 +1,41 @@
+{% verbatim %}
+<ul id="menu">
+
+    <li>
+        <a href="{{ url('/') }}" target="_blank" class="btn btn-secondary-outline btn-sm">
+            <span class="sm-icon"><i class="fa fa-eye"></i></span><span class="sm-txt">{{ trans('{{vendor|lower}}.theme.{{slug|lower}}::control_panel.view_site') }}</span>
+        </a>
+    </li>
+
+    <li class="dropdown">
+        <a href="#" data-toggle="dropdown">
+            <span class="sm-icon"><i class="fa fa-user"></i></span> <span class="sm-txt">{{ user().display_name }}</span>
+        </a>
+
+        <div class="dropdown-menu">
+
+            <div class="arrow"></div>
+
+            <div class="media">
+                <a class="media-left pull-left" href="#">
+                    <img class="media-object" src="https://gravatar.com/avatar/{{ md5(user().email) }}">
+                </a>
+                <div class="media-body">
+                    <div class="media-heading">{{ user().display_name }}</div>
+                    <div class="email">{{ user().email }}</div>
+                    <a href="{{ url('admin/logout') }}" class="btn btn-primary btn-sm">
+                        {{ trans('{{vendor|lower}}.theme.{{slug|lower}}::control_panel.logout') }}
+                    </a>
+                </div>
+            </div>
+
+            <hr>
+
+            <a href="{{ url('admin/preferences') }}" class="nav-item">{{ trans('anomaly.module.preferences::addon.title') }}</a>
+            <br>
+            <a href="{{ url('admin/settings') }}" class="nav-item">{{ trans('anomaly.module.settings::addon.title') }}</a>
+        </div>
+    </li>
+
+</ul>
+{% endverbatim %}

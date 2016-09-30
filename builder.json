@@ -17,6 +17,13 @@
       "required": false,
       "label": "Description",
       "default": "A customizable release of the official PyroCMS admin theme"
+    },
+    "primary": {
+      "type": "string",
+      "required": false,
+      "label": "Brand primary color",
+      "options": ["purple","green","blue","orange","red"],
+      "default": "purple"
     }
   }
 }
