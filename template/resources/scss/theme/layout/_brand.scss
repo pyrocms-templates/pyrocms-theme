@@ -1,4 +1,5 @@
-#brand {
+ {% verbatim %}
+ #brand {
     float: left;
     width: 12em;
     height: 12em;
@@ -15,3 +16,4 @@
         background-size: 45%;
     }
 }
+{% endverbatim %}
