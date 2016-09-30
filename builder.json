@@ -1,0 +1,22 @@
+{
+  "schema": {
+    "vendor": {
+    "type": "string",
+    "required": true,
+    "label": "Vendor name",
+    "default": "pyrocms"
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "label": "Addon slug",
+      "default": "pyrocms"
+    },
+    "description": {
+      "type": "string",
+      "required": false,
+      "label": "Description",
+      "default": "A customizable release of the official PyroCMS admin theme"
+    }
+  }
+}
