@@ -6,7 +6,7 @@
       "pyrocms",
       "laravel",
         "addon",
-        "{{type|lower}}",
+        "{{type|lower}}"
     ],
     "homepage": "http://{{vendor}}.com/",
     "license": "MIT",
