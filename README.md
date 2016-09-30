@@ -1,2 +1,2 @@
 # admin-theme
-The official admin theme for PyroCMS customized.
+A customizable release of the official PyroCMS admin theme.
