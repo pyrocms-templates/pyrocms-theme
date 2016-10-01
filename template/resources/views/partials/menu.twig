@@ -3,7 +3,7 @@
 
     <li>
         <a href="{{ url('/') }}" target="_blank" class="btn btn-secondary-outline btn-sm">
-            <span class="sm-icon"><i class="fa fa-eye"></i></span><span class="sm-txt">{{ trans('{{vendor|lower}}.theme.{{slug|lower}}::control_panel.view_site') }}</span>
+            <span class="sm-icon"><i class="fa fa-eye"></i></span><span class="sm-txt">{{ {% endverbatim %}trans('{{vendor|lower}}.theme.{{slug|lower}}::control_panel.view_site') {% verbatim %}}}</span>
         </a>
     </li>
 
@@ -24,7 +24,7 @@
                     <div class="media-heading">{{ user().display_name }}</div>
                     <div class="email">{{ user().email }}</div>
                     <a href="{{ url('admin/logout') }}" class="btn btn-primary btn-sm">
-                        {{ trans('{{vendor|lower}}.theme.{{slug|lower}}::control_panel.logout') }}
+                        {{ {% endverbatim %}trans('{{vendor|lower}}.theme.{{slug|lower}}::control_panel.logout') {% verbatim %}}}
                     </a>
                 </div>
             </div>

@@ -7,7 +7,7 @@
     {% include "theme::partials/metadata" %}
 </head>
 
-<body id="login" style="background-image: url({{ image_path(random(config('{{vendor|lower}}.theme.{{slug|lower}}::design.backgrounds'))) }})">
+<body id="login" style="background-image: url({{ {% endverbatim %}image_path(random(config('{{vendor|lower}}.theme.{{slug|lower}}::design.backgrounds'))) {% verbatim %}}})">
 
 {{ block('content') }}
 
