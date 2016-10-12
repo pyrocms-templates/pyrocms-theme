@@ -19,17 +19,26 @@
 
 > A customizable release of the official PyroCMS admin theme
 
-## Install
+## Getting Started
 
-After installing [Pyro Builder](github.com/websemantics/builder-extension) run,
+After installing the [Builder](github.com/websemantics/builder-extension), create the theme as follows,
 
 ```
-php artisan builder:make pyrocms-theme
+php artisan make:addon vendor.theme.slug --admin
 ```
 
-Customize the theme to your requirements by selecting a different `vendor`, `slug`, `description` and `brand primary color`.
+or
+
+```
+php artisan make:addon vendor.theme.slug pyrocms-theme
+```
 
 ![Create an Admin Theme](https://github.com/pyrocms-templates/pyrocms-theme/raw/master/docs/pyrocms-theme.gif "Create an Admin theme")
+
+#### Options
+
+`--force`, to force a fresh download of the template.
+`--defaults`, to force template default values.
 
 ## Support
 
