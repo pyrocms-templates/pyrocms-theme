@@ -29,7 +29,7 @@ php artisan make:addon pyrocms-theme
 
 Customize the theme to your requirements by selecting a different `vendor`, `slug`, `description` and `brand primary color`.
 
-![Create an Admin theme](https://github.com/pyrocms-templates/pyrocms-theme/raw/master/docs/pyrocms-theme.gif "Create an Admin theme")
+![Create an Admin Theme](https://github.com/pyrocms-templates/pyrocms-theme/raw/master/docs/pyrocms-theme.gif "Create an Admin theme")
 
 ## Support
 
