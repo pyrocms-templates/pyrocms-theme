@@ -37,8 +37,8 @@ php artisan make:addon vendor.theme.slug pyrocms-theme
 
 #### Options
 
-`--force`, to force a fresh download of the template.
-`--defaults`, to force template default values.
+* `--force`, to force a fresh download of the template.
+* `--defaults`, to force template default values.
 
 ## Support
 
