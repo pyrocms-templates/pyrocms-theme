@@ -24,7 +24,7 @@
 After installing [Pyro Builder](github.com/websemantics/builder-extension) run,
 
 ```
-php artisan make:builder pyrocms-theme
+php artisan make:addon pyrocms-theme
 ```
 
 Customize the theme to your requirements by selecting a different `vendor`, `slug`, `description` and `brand primary color`.
